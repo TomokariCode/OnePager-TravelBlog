@@ -1,0 +1,424 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  padding: 0;
+  margin: 0;
+  color: #333;
+  overflow-x: hidden;
+}
+
+.card {
+  border-radius: 5px;
+  position: relative;
+  width: 25.3333333333vw;
+}
+.card h3 {
+  position: absolute;
+  bottom: 1.4vw;
+  left: 1.3vw;
+  right: 6%;
+  color: #ffffff;
+  font-size: 1.5vw;
+}
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 30vw;
+}
+.card .card-location {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 1.6vw;
+  left: 1.3vw;
+  background-color: rgba(106, 106, 106, 0.3);
+  padding: 0.25vw;
+  padding-right: 0.75vw;
+  border-radius: 100px;
+  z-index: 2;
+}
+.card .card-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card .card-header img {
+  width: 1vw;
+  margin-top: -0.15vw;
+}
+.card .card-header p {
+  color: #ffffff;
+  font-size: 0.9vw;
+  margin-left: 0.5vw;
+}
+
+.button-content {
+  display: flex;
+}
+
+.button-arrow-icon {
+  margin-left: 1vw;
+  width: 0.8vw;
+}
+
+.header {
+  width: 100vw;
+  height: 40vw;
+  position: relative;
+  background-image: url("/src/img/topAfbeelding.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 5vw;
+  -webkit-clip-path: url(#wave);
+          clip-path: url(#wave);
+}
+.header h2 {
+  margin-bottom: 1vw;
+  font-size: 2.5vw;
+}
+.header p {
+  font-size: 1.2vw;
+  text-wrap: wrap;
+  width: 42%;
+  margin-bottom: 1vw;
+}
+.header .button {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.header .button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.nav {
+  position: absolute;
+  /* Zorgt dat de nav niet in de normale document flow zit */
+  /* Positioneer de nav 3vw van de bovenkant van de pagina */
+  width: 96vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(214, 214, 214, 0.5411764706);
+  margin: 2vw;
+  padding: 3vw;
+  max-height: 5vw;
+  flex-wrap: nowrap;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+.nav a {
+  font-size: 1.2vw;
+  color: #ffffff;
+  margin-right: 2vw;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+  -webkit-transition: color 0.3s ease, transform 0.3s ease;
+  -moz-transition: color 0.3s ease, transform 0.3s ease;
+  -ms-transition: color 0.3s ease, transform 0.3s ease;
+  -o-transition: color 0.3s ease, transform 0.3s ease;
+  display: inline-block;
+}
+.nav a:hover {
+  transform: scale(1.2);
+  /*Testmeteenvastekleur*/
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
+.nav img {
+  margin-right: 1vw;
+  max-width: 5vw;
+  fill: #ffffff;
+}
+.nav .nav-left {
+  display: flex;
+  align-items: center;
+}
+.nav h1 {
+  font-size: 1.6vw;
+  color: #ffffff;
+  margin-left: 1vw;
+  font-family: "Poppins", sans-serif;
+  text-wrap: nowrap;
+}
+
+.margins {
+  margin: 0vw 10vw;
+}
+
+.hero-text {
+  position: absolute;
+  color: #ffffff;
+  margin-top: 15vw;
+}
+
+.cards-raster .card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto;
+  gap: 1vw;
+  max-width: 80vw;
+  margin: 0 auto;
+  margin-bottom: 3vw;
+  /* Of stel een andere breedte in */
+}
+.cards-raster .cards-raster-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Horizontaal centreren */
+  text-align: center;
+  /* Tekst centreren binnen de div */
+  margin-bottom: 5vw;
+}
+.cards-raster .cards-raster-title h3 {
+  font-size: 1.9vw;
+}
+.cards-raster p {
+  font-size: 1.2vw;
+}
+
+.scroll-bestemmingen {
+  margin-top: 10vw;
+  margin-bottom: 10vw;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  position: relative;
+}
+.scroll-bestemmingen:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -10vw;
+  width: 50px;
+  /* Pas dit aan voor de breedte van het fade-effect */
+  height: 100%;
+  background: linear-gradient(to left, rgb(255, 255, 255), rgba(255, 255, 255, 0));
+  /* Pas kleur aan */
+  pointer-events: none;
+}
+.scroll-bestemmingen .betemmingen-cards {
+  overflow-x: auto;
+  display: flex;
+  scroll-behavior: smooth;
+  cursor: grab;
+  gap: 1.5vw;
+  padding-bottom: 2vw;
+  width: 90vw;
+}
+.scroll-bestemmingen .betemmingen-cards::-webkit-scrollbar {
+  display: none;
+}
+.scroll-bestemmingen h2 {
+  font-size: 2vw;
+  margin-bottom: 1vw;
+}
+
+.lies-jef {
+  margin-bottom: 10vw;
+  width: 100%;
+  max-width: 70vw;
+  margin: 10vw auto;
+}
+.lies-jef .article {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 15vw;
+  max-width: 1500px;
+}
+.lies-jef img {
+  width: 17vw;
+  margin-left: -10vw;
+  -webkit-clip-path: url(#cloud);
+          clip-path: url(#cloud);
+}
+.lies-jef .text {
+  width: 40vw;
+}
+.lies-jef p {
+  font-size: 1.2vw;
+  width: 36vw;
+}
+.lies-jef h2 {
+  font-size: 2.4vw;
+}
+
+.ontdek-australie {
+  display: flex;
+  height: 35vw;
+  background-image: url("/src/img/bottomAfbeelding.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.ontdek-australie p {
+  color: #ffffff;
+  font-size: 1.2vw;
+}
+.ontdek-australie h2 {
+  max-width: 1500px;
+  color: #ffffff;
+  margin-bottom: 1vw;
+  font-size: 2.4vw;
+}
+.ontdek-australie .ontdek-australie-beschrijving {
+  flex-wrap: wrap;
+  max-width: 60%;
+  margin-bottom: 1.5vw;
+}
+.ontdek-australie .bovenTitel {
+  margin-top: 8vw;
+  display: flex;
+  width: 20%;
+  gap: 1vw;
+  margin-bottom: 1vw;
+}
+.ontdek-australie .bovenTitel p {
+  font-size: 1vw;
+}
+.ontdek-australie .bovenTitel .ontdek-australie-location-icon {
+  display: flex;
+  align-items: center;
+  background-color: rgba(106, 106, 106, 0.3019607843);
+  padding-right: 0.5vw;
+  padding-left: 0.5vw;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+}
+.ontdek-australie .bovenTitel .ontdek-australie-location-icon img {
+  height: 1.1vw;
+}
+
+.landen-lijst {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto auto;
+  gap: 2vw;
+  row-gap: 6vw;
+  margin: 6vw 10vw;
+}
+.landen-lijst a {
+  display: block;
+  color: rgba(19, 38, 47, 0.6980392157);
+  font-size: 1.1vw;
+  margin-bottom: 0.2vw;
+  font-weight: 500;
+}
+.landen-lijst h3 {
+  margin-bottom: 0.7vw;
+  font-size: 1.3vw;
+}
+
+.footer {
+  height: 20vw;
+  background-color: #13262F;
+  margin: 2vw;
+  border-radius: 15px;
+  flex-shrink: 0;
+}
+.footer h1 {
+  color: #ffffff;
+  font-size: 1.7vw;
+}
+.footer img {
+  width: 4vw;
+  margin-right: 1vw;
+}
+.footer p {
+  color: rgba(255, 255, 255, 0.2470588235);
+  font-size: 0.9vw;
+  width: 38%;
+}
+.footer a {
+  color: #ffffff;
+  font-size: 0.8vw;
+  text-decoration: none;
+}
+.footer .links-socials-footer {
+  margin-top: 3.5vw;
+  display: flex;
+  justify-content: space-between;
+  /* Verdeel de ruimte tussen de links en iconen */
+  align-items: center;
+  margin-right: 5vw;
+}
+.footer .footer-links {
+  display: flex;
+  gap: 1.7vw;
+  /* Ruimte tussen de links */
+}
+.footer .footer-content {
+  margin-left: 8vw;
+}
+.footer .icon-brandName {
+  display: flex;
+  align-content: center;
+  padding-top: 3vw;
+  margin-bottom: 2vw;
+}
+.footer .social-icon {
+  margin-top: 1vw;
+  width: 1.5vw;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+.footer .social-icon:hover {
+  transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  -o-transform: scale(1.3);
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 3.5vw;
+  padding: 0.8rem 1.5rem;
+  background-color: #13262F;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+.button:hover {
+  background-color: #224353;
+}
+.button h4 {
+  font-size: 1.1vw;
+  text-wrap: nowrap;
+}
+.button .button-arrow-icon {
+  margin-left: 1vw;
+  width: 0.7vw;
+  height: auto;
+}/*# sourceMappingURL=style.css.map */
