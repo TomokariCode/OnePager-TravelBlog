@@ -21,7 +21,7 @@
 
 <body>
 
-    <Header class="header">
+    <header class="header">
         <?php renderNav(); ?>
         <section>
             <svg width="0" height="0">
@@ -39,10 +39,7 @@
                 <?php renderButton('Snel naar alle bestemmingen'); ?>
             </div>
         </section>
-    </Header>
-
-
-
+    </header>
 
     <section class="cards-raster margins">
         <div>
@@ -52,28 +49,27 @@
             </div>
             <div class="card-grid">
                 <div>
-                    <?php renderCard('Genieten in het rustige Griekenland', 'Griekenland', '/src/img/voorbeeldbestemming1.jpg'); ?>
+                    <?php renderCard('Ervaar de rust in betoverend Kroatië', 'Kroatië', '/src/img/kroatie.png'); ?>
                 </div>
                 <div>
-                    <?php renderCard('Geniet van het microklimaat in Portugal', 'Portugal', '/src/img/voorbeeldbestemming2.jpg'); ?>
+                    <?php renderCard('Italiaanse schoonheid in de Domieten', 'Italië', '/src/img/italie.png'); ?>
                 </div>
                 <div>
-                    <?php renderCard('Ontdek een andere cultuur in Turkije', 'Turkije', '/src/img/voorbeeldbestemming3.jpg'); ?>
+                    <?php renderCard('Ga het avontuur aan in Montenegro', 'Montenegro', '/src/img/montenegro.png'); ?>
                 </div>
                 <div>
-                    <?php renderCard('Zalig de zon opsnuiven in Tenerife', 'Tenerife', '/src/img/voorbeeldbestemming4.jpg'); ?>
+                    <?php renderCard('Snuif de traditionele cultuur op in Peru', 'Peru', '/src/img/peru.png'); ?>
                 </div>
                 <div>
-                    <?php renderCard('Genieten in het rustige Griekenland', 'Griekenland', '/src/img/voorbeeldbestemming5.jpg'); ?>
+                    <?php renderCard('De veelzeidigheid van natuurparken in the USA', 'USA', '/src/img/usa.png'); ?>
                 </div>
                 <div>
-                    <?php renderCard('Geniet van het microklimaat in Portugal', 'Portugal', '/src/img/voorbeeldbestemming6.jpg'); ?>
+                    <?php renderCard('Alle hidden gems en highlights in Canada', 'Canada', '/src/img/canada.png'); ?>
                 </div>
             </div>
             <div class="cards-raster-title">
                 <?php renderButton('Ontdek alle bestemmingen'); ?>
             </div>
-        </div>
         </div>
     </section>
 
@@ -83,62 +79,35 @@
         </div>
         <div class="betemmingen-cards">
             <div class="container">
-                <?php renderCard('Genieten in het rustige Griekenland', 'Griekenland', '/src/img/voorbeeldbestemming1.jpg'); ?>
+                <?php renderCard('Genieten in het rustige Griekenland', 'Griekenland', '/src/img/griekenland.png'); ?>
             </div>
             <div class="container">
-                <?php renderCard('Geniet van het microklimaat in Portugal', 'Portugal', '/src/img/voorbeeldbestemming2.jpg'); ?>
+                <?php renderCard('Geniet van het microklimaat in Portugal', 'Portugal', '/src/img/portugal.png'); ?>
             </div>
             <div class="container">
-                <?php renderCard('Ontdek een andere cultuur in Turkije', 'Turkije', '/src/img/voorbeeldbestemming3.jpg'); ?>
+                <?php renderCard('Ontdek een andere cultuur in Turkije', 'Turkije', '/src/img/turkije.png'); ?>
             </div>
             <div class="container">
-                <?php renderCard('Zalig de zon opsnuiven in Tenerife', 'Tenerife', '/src/img/voorbeeldbestemming4.jpg'); ?>
+                <?php renderCard('Zalig de zon opsnuiven in Tenerife', 'Canarische Eilanden', '/src/img/canarische-eilanden.png'); ?>
             </div>
-            <div class="container">
-                <?php renderCard('Genieten in het rustige Griekenland', 'Griekenland', '/src/img/voorbeeldbestemming5.jpg'); ?>
+            <div>
+                <?php renderCard('Ervaar de rust in betoverend Kroatië', 'Kroatië', '/src/img/kroatie.png'); ?>
             </div>
-            <div class="container">
-                <?php renderCard('Geniet van het microklimaat in Portugal', 'Portugal', '/src/img/voorbeeldbestemming6.jpg'); ?>
+            <div>
+                <?php renderCard('Italiaanse schoonheid in de Domieten', 'Italië', '/src/img/italie.png'); ?>
             </div>
-            <div class="container">
-                <?php renderCard('Genieten in het rustige Griekenland', 'Griekenland', '/src/img/voorbeeldbestemming1.jpg'); ?>
+            <div>
+                <?php renderCard('Ga het avontuur aan in Montenegro', 'Montenegro', '/src/img/montenegro.png'); ?>
             </div>
-            <div class="container">
-                <?php renderCard('Geniet van het microklimaat in Portugal', 'Portugal', '/src/img/voorbeeldbestemming2.jpg'); ?>
+            <div>
+                <?php renderCard('Snuif de traditionele cultuur op in Peru', 'Peru', '/src/img/peru.png'); ?>
             </div>
-            <div class="container">
-                <?php renderCard('Ontdek een andere cultuur in Turkije', 'Turkije', '/src/img/voorbeeldbestemming3.jpg'); ?>
+            <div>
+                <?php renderCard('De veelzeidigheid van natuurparken in the USA', 'USA', '/src/img/usa.png'); ?>
             </div>
-            <div class="container">
-                <?php renderCard('Zalig de zon opsnuiven in Tenerife', 'Tenerife', '/src/img/voorbeeldbestemming4.jpg'); ?>
+            <div>
+                <?php renderCard('Alle hidden gems en highlights in Canada', 'Canada', '/src/img/canada.png'); ?>
             </div>
-            <div class="container">
-                <?php renderCard('Genieten in het rustige Griekenland', 'Griekenland', '/src/img/voorbeeldbestemming5.jpg'); ?>
-            </div>
-            <div class="container">
-                <?php renderCard('Geniet van het microklimaat in Portugal', 'Portugal', '/src/img/voorbeeldbestemming6.jpg'); ?>
-            </div>
-            <div class="container">
-                <?php renderCard('Genieten in het rustige Griekenland', 'Griekenland', '/src/img/voorbeeldbestemming1.jpg'); ?>
-            </div>
-            <div class="container">
-                <?php renderCard('Geniet van het microklimaat in Portugal', 'Portugal', '/src/img/voorbeeldbestemming2.jpg'); ?>
-            </div>
-            <div class="container">
-                <?php renderCard('Ontdek een andere cultuur in Turkije', 'Turkije', '/src/img/voorbeeldbestemming3.jpg'); ?>
-            </div>
-            <div class="container">
-                <?php renderCard('Zalig de zon opsnuiven in Tenerife', 'Tenerife', '/src/img/voorbeeldbestemming4.jpg'); ?>
-            </div>
-            <div class="container">
-                <?php renderCard('Genieten in het rustige Griekenland', 'Griekenland', '/src/img/voorbeeldbestemming5.jpg'); ?>
-            </div>
-            <div class="container">
-                <?php renderCard('Geniet van het microklimaat in Portugal', 'Portugal', '/src/img/voorbeeldbestemming6.jpg'); ?>
-            </div>
-
-
-
         </div>
     </section>
 
@@ -151,7 +120,7 @@
                     facilisis, ultricies libero vel, tincidunt dui. Quisque convallis efficitur ipsum et commodo.</p>
             </div>
             <div>
-                <img src="/src/img/JefEnMilo.jpg" alt="">
+                <img src="/src/img/lies-en-jef.png" alt="">
                 <svg width="0" height="0">
                     <defs>
                         <clipPath id="cloud" clipPathUnits="objectBoundingBox">
@@ -168,7 +137,7 @@
         <div class="ontdek-Australie-section-content margins">
             <div class="bovenTitel">
                 <div class="ontdek-australie-location-icon">
-                    <img src='src/icon/location-white.svg' class="ontedek-australie-location-icon"></img>
+                    <img src='src/icon/location-white.svg'></img>
                     <p>Australië</p>
                 </div>
                 <p class="ontdek-australie-location-icon">Spotlight</p>
@@ -211,7 +180,7 @@
             <a href="">Japan</a>
             <a href="">Malaysia</a>
             <a href="">Thailand</a>
-            <a href="">Thailand</a>
+            <a href="">Vietnam</a>
         </div>
         <div>
             <h3>Zuid-Amerika</h3>
@@ -254,20 +223,6 @@
     <section>
         <?php renderFooter(); ?>
     </section>
-
-    <!-- afbeelding die de hele breedte van de pagina bevat en achter de header staat -->
-    <!-- landing page top section deel met een h2 en een p tag daar onder  -->
-    <!-- een horizontaal gecentraliseerde h3 tag met een p er onder -->
-    <!-- een grid met 2 rijen en 3 kolomen afbeeldingen die cards zijn en een component zijn -->
-    <!-- dit card component bestaat uit een afbeelding en zou een titiel links boven moeten hebben met een icoon voor en oonderaan een h4 -->
-    <!-- een button component die horizontaal centraal in de pagina staat -->
-    <!-- een h3 tag met daar onder een scrollbare  rij van het voorgaande defineerde card element -->
-    <!-- een grid met een h3 met een p onder aan de linker kant en in de rechtse kolom een afbeelding  -->
-    <!-- een afbeelding die de volledige breedte van de pagina neemt met daar in 2x een p tag naast elkaar daar onder een h2 tag en daar onder een p tag daat onder een button component -->
-    <!-- twee rijen met 4 kolomen in elke kolom staan bovenaan een p tag met 6 a elementen onder elkaar  -->
-    <!-- een footer met een logo en h3 naast elkaar, rrn p tag daar onder, dan daar onden 5 p tags naast elkaar met helemaal aan het einde nog 3 logos   -->
-
-
 </body>
 <script src="/script.js"></script>
 

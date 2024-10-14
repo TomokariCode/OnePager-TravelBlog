@@ -9,14 +9,15 @@ body {
   line-height: 1.6;
   padding: 0;
   margin: 0;
-  color: #333;
   overflow-x: hidden;
+  background-color: #FFFAF7;
 }
 
 .card {
   border-radius: 5px;
   position: relative;
   width: 25.3333333333vw;
+  /* Gradient overlay */
 }
 .card h3 {
   position: absolute;
@@ -25,10 +26,11 @@ body {
   right: 6%;
   color: #ffffff;
   font-size: 1.5vw;
+  z-index: 1;
 }
 .card img {
-  width: 100%;
-  height: auto;
+  width: 25.3333333333vw;
+  height: 40vw;
   border-radius: 8px;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
@@ -37,6 +39,21 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   max-height: 30vw;
+}
+.card::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  margin-bottom: 0.5vw;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 .card .card-location {
   display: flex;
@@ -58,6 +75,7 @@ body {
 .card .card-header img {
   width: 1vw;
   margin-top: -0.15vw;
+  height: 1vw;
 }
 .card .card-header p {
   color: #ffffff;
@@ -78,7 +96,7 @@ body {
   width: 100vw;
   height: 40vw;
   position: relative;
-  background-image: url("/src/img/topAfbeelding.jpg");
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("/src/img/header-img.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -94,7 +112,12 @@ body {
   font-size: 1.2vw;
   text-wrap: wrap;
   width: 42%;
-  margin-bottom: 1vw;
+  margin-bottom: 2vw;
+}
+.header .hero-text {
+  position: absolute;
+  color: #ffffff;
+  margin-top: 15vw;
 }
 .header .button {
   background-color: rgba(255, 255, 255, 0.4);
@@ -105,13 +128,13 @@ body {
 
 .nav {
   position: absolute;
-  /* Zorgt dat de nav niet in de normale document flow zit */
-  /* Positioneer de nav 3vw van de bovenkant van de pagina */
   width: 96vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(214, 214, 214, 0.5411764706);
+  background-color: rgba(214, 214, 214, 0.2);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
   margin: 2vw;
   padding: 3vw;
   max-height: 5vw;
@@ -124,6 +147,7 @@ body {
 }
 .nav a {
   font-size: 1.2vw;
+  font-weight: 500;
   color: #ffffff;
   margin-right: 2vw;
   text-decoration: none;
@@ -136,7 +160,6 @@ body {
 }
 .nav a:hover {
   transform: scale(1.2);
-  /*Testmeteenvastekleur*/
   -webkit-transform: scale(1.2);
   -moz-transform: scale(1.2);
   -ms-transform: scale(1.2);
@@ -163,12 +186,6 @@ body {
   margin: 0vw 10vw;
 }
 
-.hero-text {
-  position: absolute;
-  color: #ffffff;
-  margin-top: 15vw;
-}
-
 .cards-raster .card-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -176,16 +193,13 @@ body {
   gap: 1vw;
   max-width: 80vw;
   margin: 0 auto;
-  margin-bottom: 3vw;
-  /* Of stel een andere breedte in */
+  margin-bottom: 4vw;
 }
 .cards-raster .cards-raster-title {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* Horizontaal centreren */
   text-align: center;
-  /* Tekst centreren binnen de div */
   margin-bottom: 5vw;
 }
 .cards-raster .cards-raster-title h3 {
@@ -209,10 +223,8 @@ body {
   top: 0;
   right: -10vw;
   width: 50px;
-  /* Pas dit aan voor de breedte van het fade-effect */
   height: 100%;
   background: linear-gradient(to left, rgb(255, 255, 255), rgba(255, 255, 255, 0));
-  /* Pas kleur aan */
   pointer-events: none;
 }
 .scroll-bestemmingen .betemmingen-cards {
@@ -265,7 +277,7 @@ body {
 .ontdek-australie {
   display: flex;
   height: 35vw;
-  background-image: url("/src/img/bottomAfbeelding.jpg");
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("/src/img/ontdek-australie.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -293,7 +305,7 @@ body {
   margin-bottom: 1vw;
 }
 .ontdek-australie .bovenTitel p {
-  font-size: 1vw;
+  font-size: 1.1vw;
 }
 .ontdek-australie .bovenTitel .ontdek-australie-location-icon {
   display: flex;
@@ -309,6 +321,7 @@ body {
 }
 .ontdek-australie .bovenTitel .ontdek-australie-location-icon img {
   height: 1.1vw;
+  margin-right: 0.25vw;
 }
 
 .landen-lijst {
@@ -360,14 +373,12 @@ body {
   margin-top: 3.5vw;
   display: flex;
   justify-content: space-between;
-  /* Verdeel de ruimte tussen de links en iconen */
   align-items: center;
   margin-right: 5vw;
 }
 .footer .footer-links {
   display: flex;
   gap: 1.7vw;
-  /* Ruimte tussen de links */
 }
 .footer .footer-content {
   margin-left: 8vw;
