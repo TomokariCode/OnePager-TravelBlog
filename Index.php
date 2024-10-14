@@ -149,7 +149,7 @@
                 <p>Proin gravida nulla in massa dapibus, in bibendum orci bibendum. Suspendisse non metus non tellus
                     tristique.</p>
             </div>
-            <div><?php renderButton('Ontdek Australie'); ?></div>
+            <div><?php renderButton('Ontdek Australië'); ?></div>
         </div>
     </section>
 

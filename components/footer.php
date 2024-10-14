@@ -35,4 +35,3 @@ function renderFooter()
    </footer>
     ';
 }
-?>

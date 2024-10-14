@@ -47,23 +47,24 @@ body {
         -o-border-radius: 8px;
         object-fit: cover;
         max-height: 30vw;
+        position: relative;
     }
 
     /* Gradient overlay */
     &::after {
         content: '';
         position: absolute;
-        bottom: 0;
+        bottom: 0.4vw;
         left: 0;
         right: 0;
         height: 40%;
         background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
-        margin-bottom: 0.5vw;
-        border-radius: 10px;
-        -webkit-border-radius: 10px;
-        -moz-border-radius: 10px;
-        -ms-border-radius: 10px;
-        -o-border-radius: 10px;
+        //margin-bottom: 0.35vw;
+        border-radius: 8px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -o-border-radius: 8px;
     }
 
     .card-location {
@@ -86,14 +87,13 @@ body {
 
         img {
             width: 1vw;
-            margin-top: -0.15vw;
             height: 1vw;
         }
 
         p {
             color: $secondary-color ;
             font-size: 0.9vw;
-            margin-left: 0.5vw;
+            margin-left: 0.3vw;
         }
     }
 }
@@ -250,16 +250,16 @@ body {
     user-select: none;
     position: relative;
 
-    &:after {
-        content: '';
-        position: absolute;
-        top: 0;
-        right: -10vw;
-        width: 50px;
-        height: 100%;
-        background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
-        pointer-events: none;
-    }
+    // &:after {
+    //     content: '';
+    //     position: absolute;
+    //     top: 0;
+    //     right: -11vw;
+    //     width: 50px;
+    //     height: 100%;
+    //     background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    //     pointer-events: none;
+    // }
 
     .betemmingen-cards {
         overflow-x: auto; // Horizontaal scrollen tegen gaan
@@ -268,7 +268,7 @@ body {
         cursor: grab;
         gap: 1.5vw;
         padding-bottom: 2vw;
-        width: 90vw;
+        width: 100vw;
     }
 
     .betemmingen-cards::-webkit-scrollbar {
@@ -347,7 +347,7 @@ body {
     }
 
     .bovenTitel {
-        margin-top: 8vw;
+        margin-top: 10vw;
         display: flex;
         width: 20%;
         gap: 1vw;

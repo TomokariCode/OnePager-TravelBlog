@@ -39,21 +39,21 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   max-height: 30vw;
+  position: relative;
 }
 .card::after {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: 0.4vw;
   left: 0;
   right: 0;
   height: 40%;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
-  margin-bottom: 0.5vw;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
 }
 .card .card-location {
   display: flex;
@@ -74,13 +74,12 @@ body {
 }
 .card .card-header img {
   width: 1vw;
-  margin-top: -0.15vw;
   height: 1vw;
 }
 .card .card-header p {
   color: #ffffff;
   font-size: 0.9vw;
-  margin-left: 0.5vw;
+  margin-left: 0.3vw;
 }
 
 .button-content {
@@ -217,16 +216,6 @@ body {
           user-select: none;
   position: relative;
 }
-.scroll-bestemmingen:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: -10vw;
-  width: 50px;
-  height: 100%;
-  background: linear-gradient(to left, rgb(255, 255, 255), rgba(255, 255, 255, 0));
-  pointer-events: none;
-}
 .scroll-bestemmingen .betemmingen-cards {
   overflow-x: auto;
   display: flex;
@@ -234,7 +223,7 @@ body {
   cursor: grab;
   gap: 1.5vw;
   padding-bottom: 2vw;
-  width: 90vw;
+  width: 100vw;
 }
 .scroll-bestemmingen .betemmingen-cards::-webkit-scrollbar {
   display: none;
@@ -298,7 +287,7 @@ body {
   margin-bottom: 1.5vw;
 }
 .ontdek-australie .bovenTitel {
-  margin-top: 8vw;
+  margin-top: 10vw;
   display: flex;
   width: 20%;
   gap: 1vw;
